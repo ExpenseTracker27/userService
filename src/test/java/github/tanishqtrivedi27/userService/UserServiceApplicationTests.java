@@ -1,4 +1,4 @@
-package github.tanishqtrivedi27.userservice;
+package github.tanishqtrivedi27.userService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

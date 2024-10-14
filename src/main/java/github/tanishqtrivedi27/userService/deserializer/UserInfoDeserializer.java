@@ -1,7 +1,7 @@
-package github.tanishqtrivedi27.userservice.deserializer;
+package github.tanishqtrivedi27.userService.deserializer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import github.tanishqtrivedi27.userservice.entities.UserInfoDTO;
+import github.tanishqtrivedi27.userService.models.UserInfoDTO;
 import org.apache.kafka.common.header.Headers;
 import org.apache.kafka.common.serialization.Deserializer;
 
