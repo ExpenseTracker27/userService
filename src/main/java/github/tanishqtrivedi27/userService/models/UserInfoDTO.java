@@ -31,11 +31,6 @@ public class UserInfoDTO {
     private String email;
 
     public UserInfo transform() {
-        return UserInfo.builder()
-                .firstName(firstName)
-                .lastName(lastName)
-                .email(email)
-                .userId(userId)
-                .phoneNumber(phoneNumber).build();
+        return UserInfo.builder().firstName(firstName).lastName(lastName).email(email).userId(userId).phoneNumber(phoneNumber).build();
     }
 }
