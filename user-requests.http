@@ -1,0 +1,19 @@
+### GET user data
+GET http://localhost:8080/user/v1/user
+Content-Type: Application/json
+
+{
+"user_id": "09d023ee-5fad-439a-b178-afd53d638871"
+}
+
+###
+POST http://localhost:8080/user/v1/user
+Content-Type: Application/json
+
+{
+  "user_id": "09d023ee-54ad-439a-b178-afd53d638871",
+  "email": "tanishq@gmail.com",
+  "first_name":"tanishq",
+  "last_name": "trivedi",
+  "phone_number": 5432456543
+}

@@ -20,7 +20,13 @@ public class UserService {
     }
 
     public UserInfoDTO createOrUpdateUser(UserInfoDTO userInfoDTO) {
-        UnaryOperator<UserInfo> updateUser = user -> userRepository.save(userInfoDTO.transform());
+        UnaryOperator<UserInfo> updateUser = user -> {
+            user.setFirstName(userInfoDTO.getFirstName());
+            user.setLastName(userInfoDTO.getLastName());
+            user.setPhoneNumber(userInfoDTO.getPhoneNumber());
+            user.setEmail(userInfoDTO.getEmail());
+            return userRepository.save(user);
+        };
 
         Supplier<UserInfo> createUser = () -> userRepository.save(userInfoDTO.transform());
 

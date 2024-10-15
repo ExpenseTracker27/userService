@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/user/v1")
+@RestController
 public class UserController {
     private final UserService userService;
 
@@ -19,7 +19,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/user")
+    @PostMapping("user/v1/user")
     public ResponseEntity<UserInfoDTO> createUpdateUser(@RequestBody UserInfoDTO userInfoDTO) {
         try {
             UserInfoDTO user = userService.createOrUpdateUser(userInfoDTO);
@@ -29,8 +29,8 @@ public class UserController {
         }
     }
 
-    @GetMapping("/user")
-    public ResponseEntity<UserInfoDTO> getUser(UserInfoDTO userInfoDTO) {
+    @GetMapping("user/v1/user")
+    public ResponseEntity<UserInfoDTO> getUser(@RequestBody UserInfoDTO userInfoDTO) {
         try {
             UserInfoDTO user = userService.getUser(userInfoDTO);
             return new ResponseEntity<>(user, HttpStatus.OK);
