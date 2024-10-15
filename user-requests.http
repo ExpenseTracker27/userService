@@ -1,9 +1,9 @@
 ### GET user data
-GET http://localhost:8080/user/v1/user
+GET https://localhost:8443/user/v1/user
 Content-Type: Application/json
 
 {
-"user_id": "09d023ee-5fad-439a-b178-afd53d638871"
+"user_id": "b09cfe92-5128-4566-8e24-423b6117b21b"
 }
 
 ###
