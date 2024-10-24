@@ -13,10 +13,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Table(name = "users")
 public class UserInfo {
-//    @GeneratedValue(strategy = GenerationType.AUTO)
-//    private Long id;
-
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    @Column(unique=true)
     private String userId;
 
     private String firstName;
