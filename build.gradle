@@ -29,6 +29,8 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.redisson:redisson-spring-boot-starter'
+    implementation 'org.redisson:redisson-spring-data-33:3.37.0'
 }
 
 tasks.named('test') {
