@@ -17,3 +17,16 @@ Content-Type: Application/json
   "last_name": "trivedi",
   "phone_number": 5432456543
 }
+
+###
+POST http://localhost:8000/auth/v1/signup
+Content-Type: Application/json
+
+{
+  "username": "trivtan27",
+  "first_name": "tanishq",
+  "last_name": "trivedi",
+  "phone_number": "6543543253",
+  "email": "t@email.com",
+  "password": "Qrsae3@jv03"
+}
