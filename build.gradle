@@ -38,7 +38,7 @@ tasks.named('test') {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'github.tanishqtrivedi27.authService.AuthServiceApplication'
+        attributes 'Main-Class': 'github.tanishqtrivedi27.userService.UserServiceApplication'
     }
 
     from {
